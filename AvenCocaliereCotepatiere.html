@@ -46,7 +46,7 @@
 		<!-- INCLUDE SETTINGS HERE -->
 		viewer.loadSettingsFromURL();
 		
-		viewer.setDescription("A karst conduit dataset");
+		viewer.setDescription("St André de Cruzières karst system");
 		
 		viewer.loadGUI(() => {
 			viewer.setLanguage('en');
@@ -145,10 +145,10 @@
 			
 			let material = pointcloud.material;
 			material.size = 1;
-            material.gradient = Potree.Gradients.GRAYSCALE;
-			material.pointSizeType = Potree.PointSizeType.FIXED;
+            material.gradient = Potree.Gradients.VIRIDIS;
+			material.pointSizeType = Potree.PointSizeType.ADAPTATIVE;
 			material.shape = Potree.PointShape.CIRCLE;
-			material.activeAttributeName = "intensity";
+			material.activeAttributeName = "CoordZ";
 			
 			scene.addPointCloud(pointcloud);
 			
