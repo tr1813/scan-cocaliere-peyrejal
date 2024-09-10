@@ -46,7 +46,7 @@
 		<!-- INCLUDE SETTINGS HERE -->
 		viewer.loadSettingsFromURL();
 		
-		viewer.setDescription("St André de Cruzières karst system");
+		viewer.setDescription("St André de Cruzières karst system.<br> Data aquisition funded by ERC KARST Synergy Grant 2022 101071836<br> LiDAR HD data © IGN 2024");
 		
 		viewer.loadGUI(() => {
 			viewer.setLanguage('en');
@@ -154,9 +154,44 @@
 			
 			viewer.fitToScreen();
 		});
+
+
 	
 		// INCLUDE ANNOTATIONS BELOW
+		viewer.scene.addAnnotation([794260.500, 6358495.920, 200.120],{ 
+			"title": "1",
+			"description": "Aven de la Cocalière",
+			"cameraPosition": [794206.569, 6358429.699, 294.146],
+			"cameraTarget": [794260.500, 6358495.920, 190.120]});	
 
+
+		viewer.scene.addAnnotation([794431.070, 6358585.160, 182.840],{ 
+			"title": "2",
+			"description": "Event de Cotepatière",
+			"cameraPosition": [794681.718, 6358657.931, 185.429],
+			"cameraTarget": [794431.070, 6358585.160, 177.840]});	
+
+
+		viewer.scene.addAnnotation([794647.379, 6358678.623, 175.412],{ 
+			"title": "3",
+			"description": "Event de Peyrejal",
+		    "cameraPosition": [794723.636, 6358632.672, 209.863],
+			"cameraTarget": [794647.379, 6358678.623, 165.412]
+		});	
+
+
+		viewer.scene.addAnnotation([794238.816, 6358556.906, 183.095],{ 
+			"title": "4",
+			"description": "Study area", 
+			"cameraPosition": [794244.245, 6358562.218, 179.927],
+			"cameraTarget": [794238.816, 6358556.906, 178.095]});	
+
+		viewer.scene.addAnnotation([794422.723, 6358809.068, 172.078],{ 
+			"title": "5",
+			"description": "Peyrejal upstream sump", 
+			"cameraPosition": [794402.737, 6358823.764, 180.639],
+			"cameraTarget": [794422.723, 6358809.068, 167.078]});	
+			
 	</script>
 	
 	
